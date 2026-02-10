@@ -25,7 +25,6 @@ elif (input_train < 0) or (input_val < 0) or (input_test < 0):
     sys.exit(1)
 
 # 3. Dividir (ratio=(train, validation, test))
-# Ejemplo: 80% entrenamiento, 10% validación, 10% prueba
 splitfolders.ratio(input_folder, output=output_folder, 
                    seed=42, ratio=(input_train/100, input_val/100, input_test/100), group_prefix=True)
 
